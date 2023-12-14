@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Summary Romanenko</title>
+<link rel="shortcut icon" href="img/logoico1.ico" type="image/x-icon">
+<link rel="icon" href="img/logoico32.png" sizes="32x32">
+<link rel="icon" href="img/logoico48.png" sizes="48x48">
+<link rel="icon" href="img/logoico96.png" sizes="96x96">
+<link rel="icon" href="img/logoico144.png" sizes="144x144"> 
+<style type="text/css">
+	/* Стили для бокового меню */
+
+	body{
+font-family: Arial;
+
+	}
+
+::-webkit-scrollbar {
+width: 15px;
+}
+
+::-webkit-scrollbar-track {
+opacity: 0.2;
+background: black; 
+border-radius: 0% 0% 0% 0%;
+/*border: 1px solid rgba(255, 255, 255, 0.1);*/
+
+}
+
+::-webkit-scrollbar-thumb {
+background: black; 
+border: 2px solid;
+border-radius: 1px;
+border-color: rgba(255, 255, 255, 1);
+border-radius: 0% 0% 0% 0%;
+
+}
+
+
+	.p{
+font-family: Arial Black;
+	}
+#sidebar {
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: -300px; /* Скрыто за левым краем экрана */
+    height: 100%;
+    background-color: #f0f0f0;
+    transition: left 0.3s;
+}
+
+/* Стили для основного контента */
+#main-content {
+    margin-left: 0;
+    transition: margin-left 0.3s;
+}
+
+/* Медиазапрос для экранов шире 1920px */
+@media (min-width: 1920px) {
+    #sidebar {
+        left: 0; /* Меню видно всегда */
+    }
+    #main-content {
+        margin-left: 300px; /* Отступ для основного контента */
+    }
+}
+
+/* Стили для кнопки на мобильных устройствах */
+#menu-toggle {
+    display: none;
+}
+    #menu-toggle1{
+    display: none;
+    	
+    }
+@media (max-width: 1920px) {
+    #menu-toggle {
+        display: block;
+/*        	display: flex;*/
+position: fixed;
+/*margin-left: 20px;
+margin-top: 20px;*/
+/*margin-right: 20px;*/
+width: 30px;
+height: 30px;
+text-align: center;
+justify-content: center;
+justify-items: center;
+align-content: center;
+align-items: center;
+border: 2px solid black;
+border-radius: 10px;
+background-color: white;
+font-family: Arial Black;
+line-height: 0.4;
+letter-spacing: -1px;
+    }
+
+    #menu-toggle1{
+	display: flex;
+margin-left: auto;
+margin-top: 20px;
+margin-right: 20px;
+width: 30px;
+height: 30px;
+text-align: center;
+justify-content: center;
+justify-items: center;
+align-content: center;
+align-items: center;
+border: 2px solid black;
+border-radius: 10px;
+background-color: white;
+font-family: Arial Black;
+
+}
+
+#profile-photo{
+	    margin-top: 20px;
+}
+
+}
+
+/* Стили для профиля */
+#profile {
+    text-align: center;
+}
+
+/* Стили для фото профиля */
+#profile-photo {
+    width: 150px;
+    height: 150px;
+    background-image: url('img/lcustom.JPG'); /* Замените на путь к вашему фото */
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+/*    animation: blink-animation 1s infinite;*/
+/*	margin-top: 0px;*/
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+/*    margin: 0 auto;*/
+}
+
+/* Стили для фото профиля */
+/*#profile-photo {
+
+}
+*/
+/* Остальные стили... */
+
+
+/* Анимация для мерцания фото */
+@keyframes blink-animation {
+    50% {
+        opacity: 0; /* Меняйте на нужную прозрачность для "мерцания" */
+    }
+}
+
+/* Стили для горизонтальной линии */
+hr {
+    width: 50%;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+/* Стили для якорей (тегов) */
+a {
+    color: black;
+    text-decoration: none;
+/*    margin: 0 10px;*/
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: crosshair;
+}
+
+/* Стили для секций */
+#section1, #section2 {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+    width: 80%;
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+    <!-- Кнопка для мобильных устройств -->
+    <button id="menu-toggle">
+----<br>----<br>----<br>
+    </button>
+
+    <!-- Боковое меню -->
+    <div id="sidebar">
+        <!-- Содержимое меню -->
+        <button id="menu-toggle1">X</button>
+            <div id="profile">
+        <!-- Фото профиля -->
+        <div id="profile-photo"><img id="profile-photo" src="img/lstandart.JPG" alt="Профиль"></div> 
+
+        <!-- Имя и фамилия -->
+        <p class="p">George Romanenko</p>
+
+        <!-- Деятельность -->
+        <p>Content Developer</p>
+
+        <!-- Горизонтальная линия -->
+        <hr>
+
+        <!-- Якоря (теги) -->
+        
+        
+
+        <ul style="text-align: left; font-family: Arial Bold; color: black;">
+  <li><a href="#ainc">Admin inc.</a></li>
+  <li><a href="#as">Admin Store</a></li>
+  <li><a href="#xn1ght">XN1GHT</a></li>
+</ul>
+        <!-- Добавьте дополнительные теги по необходимости -->
+    </div>
+
+    <!-- Секции, на которые ссылаются якоря -->
+
+    <!-- Добавьте дополнительные секции по необходимости -->
+    </div>
+
+    <!-- Основной контент -->
+    <div id="main-content">
+        <!-- Содержимое страницы -->
+<!--             <div id="section1">Содержимое секции 1</div>
+    <div id="section2">Содержимое секции 2</div> -->
+
+
+	<div style="display: flex; font-size: 200%; width: 85%;
+margin: 20px auto;" id="ainc">
+		<div class="p"># </div>
+		<div class="x2">
+<span class="p"> It's ADMIN inc.<br></span>
+<div style="font-family: Arial Bold;">
+It's main page<br> 
+On this WebSite you can find<br>
+ links on other projects, <br>
+ and other. 
+
+<br>Have Fun! (: <br> <br> 
+    <a href="https://adm1nsys.github.io/main/" style="display: flex;
+font-size: 200%;
+/* position: relative; */
+/* display: revert; */
+display: inline-flex;
+/* top: 100%; */
+/* position: absolute; */
+color: white;
+/* top: 105%; */
+bottom: 0px;
+left: 6%;
+background-color: white;
+border: 5px solid black;
+font-size: 2vh;
+text-align: center;
+width: 15%;
+height: 5vh;
+text-align: center;
+align-items: center;
+justify-content: center;
+color: black;">
+GO!
+    </a>
+</div>
+		</div>
+    </div>
+
+
+
+    	<div style="display: flex; font-size: 200%; width: 85%;
+margin: 20px auto;" id="as">
+		<div class="p"># </div>
+		<div class="x2">
+<span class="p"> It's ADMIN STORE.<br> </span>
+<div style="font-family: Arial Bold;">
+On this page <br>you can find<br> a lot of projects. <br>  ALL FOR FREE!
+
+<br>Have Fun! (: <br> <br> 
+    <a href="https://adm1nsys.github.io/admin-store/" style="display: flex;
+font-size: 200%;
+/* position: relative; */
+/* display: revert; */
+display: inline-flex;
+/* top: 100%; */
+/* position: absolute; */
+color: white;
+/* top: 105%; */
+bottom: 0px;
+left: 6%;
+background-color: white;
+border: 5px solid black;
+font-size: 2vh;
+text-align: center;
+width: 15%;
+height: 5vh;
+text-align: center;
+align-items: center;
+justify-content: center;
+color: black;">
+GO!
+    </a>
+</div>
+		</div>
+    </div>
+
+
+        	<div style="display: flex; font-size: 200%; width: 85%;
+margin: 20px auto;" id="xn1ght">
+		<div class="p"># </div>
+		<div class="x2">
+<span class="p"> It's XN1GHT.<br>   </span>
+<div style="font-family: Arial Bold;">
+It's page with JB projects. <br>  And other.  
+
+<br>Have Fun! (: <br> <br> 
+    <a href="https://adm1nsys.github.io/xn1ght/" style="display: flex;
+font-size: 200%;
+/* position: relative; */
+/* display: revert; */
+display: inline-flex;
+/* top: 100%; */
+/* position: absolute; */
+color: white;
+/* top: 105%; */
+bottom: 0px;
+left: 6%;
+background-color: white;
+border: 5px solid black;
+font-size: 2vh;
+text-align: center;
+width: 15%;
+height: 5vh;
+text-align: center;
+align-items: center;
+justify-content: center;
+color: black;">
+GO!
+    </a>
+</div>
+		</div>
+    </div>
+
+
+<script src='js/alljs.js'></script>
+
+</body>
+</html>
