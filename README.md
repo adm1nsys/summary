@@ -1,3 +1,3 @@
 # summary
 summary
-https://administrati0n.github.io/summary/
+https://adm1nsys.github.io/summary/
